@@ -1,9 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './components/App';
+import bookReducer from './reducers/book';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const sampleBooks = [
+    {        
+        id: Math.floor((Math.random() * 100) + 1),
+        title: 'The Lord Of The Rings',
+        category: 'Action'
+    },
+    {        
+        id: Math.floor((Math.random() * 100) + 1),
+        title: 'Interstellar',
+        category: 'Sci-Fi'
+    },
+    {        
+        id: Math.floor((Math.random() * 100) + 1),
+        title: 'The Lord Of The Rings',
+        category: 'Action'
+    },
+    {        
+        id: Math.floor((Math.random() * 100) + 1),
+        title: 'Kung-Fu-Panda',
+        category: 'Kids'
+    },
+    {        
+        id: Math.floor((Math.random() * 100) + 1),
+        title: 'Troy',
+        category: 'History'
+    },
+];
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+const store = Redux.createStore(bookReducer);
+
+ReactDOM.render(
+<Provider store = {store}>
+    <App store = {store} />
+</Provider>, document.getElementById('root'));
