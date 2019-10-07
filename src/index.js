@@ -1,39 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import rootReducer from './reducers';
+import { Provider } from 'react-redux';
 import App from './components/App';
-import bookReducer from './reducers/book';
 
-const sampleBooks = [
-    {        
-        id: Math.floor((Math.random() * 100) + 1),
-        title: 'The Lord Of The Rings',
-        category: 'Action'
-    },
-    {        
-        id: Math.floor((Math.random() * 100) + 1),
-        title: 'Interstellar',
-        category: 'Sci-Fi'
-    },
-    {        
-        id: Math.floor((Math.random() * 100) + 1),
-        title: 'The Lord Of The Rings',
-        category: 'Action'
-    },
-    {        
-        id: Math.floor((Math.random() * 100) + 1),
-        title: 'Kung-Fu-Panda',
-        category: 'Kids'
-    },
-    {        
-        id: Math.floor((Math.random() * 100) + 1),
-        title: 'Troy',
-        category: 'History'
-    },
-];
-
-const store = Redux.createStore(bookReducer);
+const store = createStore(rootReducer);
 
 ReactDOM.render(
-<Provider store = {store}>
-    <App store = {store} />
+    <Provider store = {store}>
+    <App />
 </Provider>, document.getElementById('root'));
+
+//console.log(store.dispatch(removeBook(book)));
