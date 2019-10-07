@@ -7,3 +7,5 @@ const Book = (book) => (
         <th>{book.category}</th>
     </tr>
 );
+
+export default Book

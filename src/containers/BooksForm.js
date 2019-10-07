@@ -4,13 +4,15 @@ const bookCategories = ["Action", "Biography", "History", "Horror", "Kids", "Lea
 
 const BooksForm = () => (
     <form>
-        <label for="title-input">Title</label>
+        <label htmlFor="title-input">Title</label>
         <input id="title-input" type="text"/>
         <select>
-            {bookCategories.map(category => (
-                <option value="category">{category}</option>
+            {bookCategories.map((category,index) => (
+                <option value="category" key={index}>{category}</option>
             ))}            
         </select>              
         <input type="submit"/>
     </form>
 );
+
+export default BooksForm;
