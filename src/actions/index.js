@@ -4,4 +4,6 @@ export const createBook = (book) => {
   return { type: 'CREATE_BOOK', newBook };
 };
 
+export const changeFilter = (filter) => ({ type: 'CHANGE_FILTER', filter });
+
 export const removeBook = (id) => ({ type: 'REMOVE_BOOK', id });
