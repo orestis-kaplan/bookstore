@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { removeBook }  from '../actions/index';
+import { removeBook } from '../actions/index';
 import Book from '../components/Book';
 
 const BooksList = ({ books, removeBook }) => (
@@ -20,7 +20,7 @@ const BooksList = ({ books, removeBook }) => (
             title={book.title}
             category={book.category}
             removeBook={removeBook}
-          />          
+          />
         ))}
       </tbody>
     </table>
@@ -38,4 +38,4 @@ BooksList.propTypes = {
 
 const mapStateToProps = (state) => ({ books: state.books });
 
-export default connect(mapStateToProps,{ removeBook })(BooksList);
+export default connect(mapStateToProps, { removeBook })(BooksList);
