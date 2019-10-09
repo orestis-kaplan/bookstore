@@ -6,10 +6,10 @@ import Book from '../components/Book';
 import CategoryFilter from './CategoryFilter';
 
 const BooksList = ({
-  books, removeBook, filter, changeFilter,
+  books, removeBook, changeFilter,
 }) => (
   <div>
-    <CategoryFilter filter={filter} changeFilter={changeFilter} />
+    <CategoryFilter changeFilter={changeFilter} />
     <table>
       <tbody>
         <tr>
@@ -38,7 +38,6 @@ BooksList.propTypes = {
     category: PropTypes.string.isRequired,
   })).isRequired,
   removeBook: PropTypes.func.isRequired,
-  filter: PropTypes.string.isRequired,
   changeFilter: PropTypes.func.isRequired,
 };
 
