@@ -1,0 +1,57 @@
+.header{
+    display: flex;
+    height: 73px;
+    justify-content: space-between;
+    padding: 0 100px;
+    background-color: #ffffff;
+    align-items: center;
+}
+.header-tabs{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.logo{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0290ff;  
+    width: 207px;
+}
+.book-tab{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 5.5;
+    letter-spacing: 1.9px;
+    color: #121212;
+}
+.categories-tab{
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 7.5;
+    letter-spacing: 1.9px;
+    color: #121212;
+}
+.profile-pic{
+    background-image: url("../images/profile.png");
+    width: 26px;
+    height: 26px;
+    margin: 9px;
+}
+.profile{
+    width: 45px;
+    border: solid 1px #e8e8e8;
+    height: 45px;
+    border-radius: 50%;
+}
