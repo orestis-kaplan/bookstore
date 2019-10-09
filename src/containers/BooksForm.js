@@ -27,7 +27,6 @@ class BooksForm extends React.Component {
     const { createBook } = this.props;
     createBook(newBook);
     this.setState({ title: '', category: bookCategories[0] });
-    document.getElementById(bookCategories[0]).selected = true;
   }
 
   render() {
@@ -45,7 +44,7 @@ class BooksForm extends React.Component {
             value={title}
             onChange={this.handleChange}
           />
-          <select className="category-selection" id="category" onChange={this.handleChange}>
+          <select value={this.state.category} className="category-selection" id="category" onChange={this.handleChange}>
             {bookCategories.map((category) => (
               <option id={category} value={category} key={category}>{category}</option>
             ))}

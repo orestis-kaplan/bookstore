@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { removeBook } from '../actions/index';
+import { removeBook, changeFilter } from '../actions/index';
 import Book from '../components/Book';
+import CategoryFilter from './CategoryFilter'
 import './styles/BooksList.css';
 
-const BooksList = ({ books, removeBook }) => (
+
+const BooksList = ({
+  books, removeBook, changeFilter,
+}) => (
   <div className="table">
+    <CategoryFilter changeFilter={changeFilter} />
     <table>
       <tbody>
         {books.map((book) => (
@@ -32,6 +37,7 @@ BooksList.propTypes = {
     percentage: PropTypes.number.isRequired,
   })).isRequired,
   removeBook: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 function getFilteredBooks(books, filter) {
@@ -41,4 +47,4 @@ function getFilteredBooks(books, filter) {
 
 const mapStateToProps = (state) => ({ books: getFilteredBooks(state.books, state.filter) });
 
-export default connect(mapStateToProps, { removeBook })(BooksList);
+export default connect(mapStateToProps, { removeBook, changeFilter })(BooksList);
