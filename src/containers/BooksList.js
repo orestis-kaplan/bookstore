@@ -5,7 +5,9 @@ import { removeBook, changeFilter } from '../actions/index';
 import Book from '../components/Book';
 import CategoryFilter from './CategoryFilter';
 
-const BooksList = ({ books, removeBook,filter, changeFilter }) => (
+const BooksList = ({
+  books, removeBook, filter, changeFilter,
+}) => (
   <div>
     <CategoryFilter filter={filter} changeFilter={changeFilter} />
     <table>

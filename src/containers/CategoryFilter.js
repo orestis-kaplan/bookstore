@@ -19,4 +19,4 @@ CategoryFilter.propTypes = {
   changeFilter: PropTypes.func.isRequired,
 };
 
-export default CategoryFilter
+export default CategoryFilter;
