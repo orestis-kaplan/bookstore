@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { changeFilter } from '../actions';
 
 const filters = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
@@ -21,6 +19,4 @@ CategoryFilter.propTypes = {
   changeFilter: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state) => ({ selectedFilter: state.filter });
-
-export default connect(mapStateToProps, { changeFilter })(CategoryFilter);
+export default CategoryFilter
