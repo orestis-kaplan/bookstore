@@ -1,5 +1,5 @@
 # Bookstore
-
+* Online preview: https://bookstorefinal.herokuapp.com/
 ## Bookstore is a React-Redux app built solely from [me](https://github.com/userman95) in which the users can add, remove and preview books and informations about them
 
 ## Concepts, tools and technologies applied here :
