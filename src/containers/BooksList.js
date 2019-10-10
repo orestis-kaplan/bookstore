@@ -3,26 +3,24 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { removeBook, changeFilter } from '../actions/index';
 import Book from '../components/Book';
-import CategoryFilter from './CategoryFilter';
+import CategoryFilter from './CategoryFilter'
+import './styles/BooksList.css';
+
 
 const BooksList = ({
   books, removeBook, changeFilter,
 }) => (
-  <div>
+  <div className="table">
     <CategoryFilter changeFilter={changeFilter} />
     <table>
       <tbody>
-        <tr>
-          <th>Book Id</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
         {books.map((book) => (
           <Book
             key={book.id}
             id={book.id}
             title={book.title}
             category={book.category}
+            percentage={book.percentage}
             removeBook={removeBook}
           />
         ))}
@@ -36,6 +34,7 @@ BooksList.propTypes = {
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
   })).isRequired,
   removeBook: PropTypes.func.isRequired,
   changeFilter: PropTypes.func.isRequired,

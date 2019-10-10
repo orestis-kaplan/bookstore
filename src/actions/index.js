@@ -1,5 +1,6 @@
 export const createBook = (book) => {
-  if (!book.id) book.id = Math.floor((Math.random() * 100) + 1);
+  if (!book.id) book.id = Math.floor((Math.random() * 10000) + 1);
+  if (!book.percentage) book.percentage = Math.floor((Math.random() * 100) + 1);
   return { type: 'CREATE_BOOK', book };
 };
 

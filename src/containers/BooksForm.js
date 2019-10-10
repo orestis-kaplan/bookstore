@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions/index';
+import './styles/BooksForm.css';
 
 const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
@@ -22,7 +23,7 @@ class BooksForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const newBook = this.state;
+    const {...newBook} = this.state;
     const { createBook } = this.props;
     createBook(newBook);
     this.setState({ title: '', category: bookCategories[0] });
@@ -32,20 +33,24 @@ class BooksForm extends React.Component {
     const { title } = this.state;
     return (
       <form>
-        <label htmlFor="title">Title</label>
-        <input
-          id="title"
-          type="text"
-          name="title"
-          value={title}
-          onChange={this.handleChange}
-        />
-        <select value={this.state.category} id="category" onChange={this.handleChange}>
-          {bookCategories.map((category) => (
-            <option id={category} value={category} key={category}>{category}</option>
-          ))}
-        </select>
-        <input type="submit" onClick={this.handleSubmit} />
+        <label className="label" htmlFor="title">ADD NEW BOOK</label>
+        <div className="form-control">
+          <input
+            id="title"
+            className="input-book"
+            placeholder="Book title"
+            type="text"
+            name="title"
+            value={title}
+            onChange={this.handleChange}
+          />
+          <select value={this.state.category} className="category-selection" id="category" onChange={this.handleChange}>
+            {bookCategories.map((category) => (
+              <option id={category} value={category} key={category}>{category}</option>
+            ))}
+          </select>
+          <button className="submit" type="submit" onClick={this.handleSubmit}>ADD BOOK</button>
+        </div>
       </form>
     );
   }
