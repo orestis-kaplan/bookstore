@@ -57,3 +57,6 @@ Finally, run `npm run deploy` and wait for it till is throws a `Published messag
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
+## Screenshot
+
+![screenshot](https://github.com/userman95/bookstore/blob/master/public/Screenshot%20(162).png)
