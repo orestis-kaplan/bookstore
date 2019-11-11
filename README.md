@@ -36,9 +36,13 @@ Necessary tools to be installed:
 `git clone git@github.com:userman95/bookstore.git`
 ### and then just run it with 
 `npm start`
-
-### Screenshots and info about Rails are coming soon
 ### cheers!
+
+### Optimization
+* Server side logic, adding removing and updating books
+* Authentication
+* Add image upload functionality for books
+* Pagination
 
 ## Deployment
 
