@@ -4,6 +4,10 @@ Bookstore CMS is an app that contains books. Users can add or remove books from 
 
 Online preview: https://bookstorefinal.herokuapp.com/
 
+## Screenshot
+
+![screenshot](https://github.com/userman95/bookstore/blob/master/public/Screenshot%20(162).png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for further development.
@@ -54,7 +58,3 @@ Finally, run `npm run deploy` and wait for it till is throws a `Published messag
 ## Authors
 
 * **[Orestis Kaplanis](https://github.com/userman95)**
-
-## Screenshot
-
-![screenshot](https://github.com/userman95/bookstore/blob/master/public/Screenshot%20(162).png)
