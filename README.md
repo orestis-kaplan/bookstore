@@ -38,7 +38,7 @@ Necessary tools to be installed:
 `npm start`
 ### cheers!
 
-### Optimization
+## Optimization
 * Server side logic, adding removing and updating books
 * Authentication
 * Add image upload functionality for books
