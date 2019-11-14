@@ -1,6 +1,13 @@
 # Bookstore
 
-Bookstore CMS is an app that contains books. Users can add or remove books from the list. Each book contain information such as: Title, Category that the books belongs to, Percentage of completition, Chapter that the user is reading now
+Bookstore CMS is an app that contains books. Users can :
+* Add, remove books
+
+Each book contain information such as :
+* Title
+* Category
+* Percentage of completition
+* Chapter that the user is reading now
 
 Online preview: https://bookstorefinal.herokuapp.com/
 
