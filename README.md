@@ -1,6 +1,6 @@
 # Bookstore
 
-Bookstore CMS is an app that allows users to add their own books there and read them. Like a digital library, it helps users manage their books and see what they last read(chapter) in a particular book.
+Bookstore CMS is an app that allows users to add their own books there and read them. Like a digital library, it helps users manage their books, categorize them, and see what they last read(chapter) in a particular book.
 
 Each book contain information such as :
 * Title
