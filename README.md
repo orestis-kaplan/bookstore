@@ -10,7 +10,7 @@ Each book contain information such as :
 
 ## Screenshot
 
-![screenshot](https://github.com/userman95/bookstore/blob/master/public/Screenshot%20(162).png)
+![screenshot](https://github.com/userman95/bookstore/blob/master/public/Screenshot.png)
 
 ## Getting Started
 
