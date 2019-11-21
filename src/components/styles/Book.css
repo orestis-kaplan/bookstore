@@ -87,7 +87,7 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #4386bf;
+    color: #23b027;
 }
 .removeBook:hover{
     text-decoration: underline;
@@ -111,7 +111,7 @@
     width: 184px;
     height: 26px;
     border-radius: 3px;
-    background-color: #0290ff;
+    background-color: #23b027;
 }
 .update{
     align-self: baseline;

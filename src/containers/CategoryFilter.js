@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles/CategoryFilter.css';
 
-const filters = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+const filters = ['All', 'React', 'Rails', 'HTML5', 'SCSS', 'SQL', 'Python', 'Java'];
 
 const CategoryFilter = ({ changeFilter }) => (
   <div className="categoryFilter">

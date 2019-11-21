@@ -1,32 +1,32 @@
 const sampleBooks = [
   {
     id: Math.floor((Math.random() * 100) + 1),
-    title: 'The Lord Of The Rings',
-    category: 'Action',
+    title: 'Introduction',
+    category: 'React',
     percentage: Math.floor((Math.random() * 100) + 1),
   },
   {
     id: Math.floor((Math.random() * 100) + 1),
-    title: 'Interstellar',
-    category: 'Sci-Fi',
+    title: 'Action Cable',
+    category: 'Rails',
     percentage: Math.floor((Math.random() * 100) + 1),
   },
   {
     id: Math.floor((Math.random() * 100) + 1),
-    title: 'The Lord Of The Rings',
-    category: 'Action',
+    title: 'Forms',
+    category: 'HTML5',
     percentage: Math.floor((Math.random() * 100) + 1),
   },
   {
     id: Math.floor((Math.random() * 100) + 1),
-    title: 'Kung-Fu-Panda',
-    category: 'Kids',
+    title: 'Preprocessors',
+    category: 'SCSS',
     percentage: Math.floor((Math.random() * 100) + 1),
   },
   {
     id: Math.floor((Math.random() * 100) + 1),
-    title: 'Troy',
-    category: 'History',
+    title: 'GROUP BY,HAVING',
+    category: 'SQL',
     percentage: Math.floor((Math.random() * 100) + 1),
   },
 ];

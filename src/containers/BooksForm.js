@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { createBook } from '../actions/index';
 import './styles/BooksForm.css';
 
-const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+const bookCategories = ['React', 'Rails', 'HTML5', 'SCSS', 'SQL', 'Python', 'Java'];
 
 class BooksForm extends React.Component {
   constructor(props) {
