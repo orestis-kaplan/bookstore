@@ -33,12 +33,12 @@ class BooksForm extends React.Component {
     const { title } = this.state;
     return (
       <form>
-        <label className="label" htmlFor="title">ADD NEW BOOK</label>
+        <label className="label" htmlFor="title">ADD NEW COURSE</label>
         <div className="form-control">
           <input
             id="title"
             className="input-book"
-            placeholder="Book title"
+            placeholder="Course title"
             type="text"
             name="title"
             value={title}
@@ -49,7 +49,7 @@ class BooksForm extends React.Component {
               <option id={category} value={category} key={category}>{category}</option>
             ))}
           </select>
-          <button className="submit" type="submit" onClick={this.handleSubmit}>ADD BOOK</button>
+          <button className="submit" type="submit" onClick={this.handleSubmit}>ADD COURSE</button>
         </div>
       </form>
     );
