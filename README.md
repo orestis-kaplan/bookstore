@@ -1,6 +1,6 @@
-# Bookstore
+# Digital Courses CMS
 
-Bookstore CMS is an app that allows users to add their own books there and read them. Like a digital library, it helps users manage their books, categorize them, and see what they last read(chapter) in a particular book.
+Digital Courses CMS is an app that allows users to add their courses there and study them. Like a digital library, it helps users manage their courses, categorize them, and see what they last read(chapter) in a particular course.
 
 Each book contain information such as :
 * Title
@@ -43,9 +43,9 @@ Necessary tools to be installed:
 ### cheers!
 
 ## Optimization
-* Server side logic, adding removing and updating books
+* Server side logic, adding removing and updating courses
 * Authentication
-* Add image upload functionality for books
+* Add image upload functionality for courses
 * Pagination
 
 ## Deployment
